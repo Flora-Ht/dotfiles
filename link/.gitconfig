@@ -1,8 +1,8 @@
 [user]
 	# TO_CHANGE: Email
-	email = quent42340@gmail.com
+	email = flora.huot@epitech.eu
 	# TO_CHANGE: Full name
-	name = Quentin Bazin
+	name = Flora Huot
 [push]
 	default = simple
 [alias]

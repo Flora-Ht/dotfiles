@@ -17,35 +17,37 @@ fi
 
 export EDITOR='vim'
 
-export PATH="$PATH:~/.local/bin:~/.dotfiles/bin:~/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:~/.local/bin:~/.dotfiles/bin:~/.gem/ruby/2.2.0/bin:~/bin"
 export PATH="$PATH:~/.steam/steam/steamapps/common/oO"
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
 
 export GOPATH="/home/${USER}/.go"
 
 source ~/.local/lib/colorsrc
 
-if [ -f ~/TODO ] && [ -n "$(cat ~/TODO)" ]
-then
-	echo "You have pending tasks, type 'cat ~/TODO' to see them."
-fi
-
-user="$EBCYAN\u$EWHITE"
-date="\[\033[38;5;38m\]\D{%a %d %b %Y}$EWHITE"
-time="$EBBLUE\t$EWHITE"
-path="$EBLUE\w$EWHITE"
-
-infos="$user | $date | $time | $path"
-
-export PS1="\n[$infos]\n $EBGREEN\$ $EWHITE"
+user="\[\033[38;5;196m\]Flora (\u)$EWHITE"
+date="$ECYAN\D{%d.%m.%Y}$EWHITE - $ECYAN\t$EWHITE"
+path="$EYELLOW\w$EWHITE $ECYAN\$git_branch$ERED\$git_dirty$EWHITE"
+star="\[\033[38;5;196m\]*$EWHITE"
+stars="\[\033[38;5;196;5m\]*\[$(tput sgr0)\]\[\033[38;5;15;5m\]*\[$(tput sgr0)\]\[\033[38;5;196;5m\]*\[$(tput sgr0)\]"
+export PS1="\n$star{ $user | $date | $path }$star\n$stars "
 
 # TO_CHANGE: Gogs username for bash
-export GOGS_USER=gnidmoo
+export GOGS_USER=Queenie
+
+snorlax | lolcat
 
 alias ls="ls --color --group-directories-first -h"
 alias tree="tree -C"
 
 alias man="man -P less"
-alias eman="man -Hchromium"
+alias eman="man -Hfirefox"
+
+alias ..='cd ..'
+alias ne="vim"
+alias cc="cc -W -Wall -Wfatal-errors -g"
+alias extract="tar xzvf"
 
 alias netre="sudo systemctl restart NetworkManager"
 

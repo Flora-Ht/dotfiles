@@ -163,8 +163,8 @@ let g:clang_load_if_clang_dotfile = 1
 "------------------------------------------------------------------------------
 " vim-operator-flashy config
 "------------------------------------------------------------------------------
-map y <Plug>(operator-flashy)
-nmap Y <Plug>(operator-flashy)$
+" map y <Plug>(operator-flashy)
+" nmap Y <Plug>(operator-flashy)$
 
 "------------------------------------------------------------------------------
 " vim-altr config
@@ -199,7 +199,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_c_no_include_search = 1
 let g:syntastic_c_no_default_include_dirs = 1
 let g:syntastic_c_auto_refresh_includes = 1
-let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/bazin_q/.froot/include', '../libmy/include', '../include', '../common/include', 'server/include']
+let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/bazin_q/.froot/include', '../libmy/include', '../include', '../common/include']
 let g:syntastic_c_compiler_options = '`find lib -name "include" -type d | sed "s/^/-I/"` `find ../lib -name "include" -type d | sed "s/^/-I/"`'
 "let g:syntastic_c_compiler_options = '-std=gnu11'
 

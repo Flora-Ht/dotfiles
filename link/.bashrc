@@ -16,9 +16,9 @@ alias ll='ls -l'
 alias la='ls -la'
 alias j='jobs'
 alias emacs='emacs -nw'
+alias ne='vim'
 
 if [ -f ${HOME}/.mybashrc ]
 then
     . ${HOME}/.mybashrc
 fi
-
