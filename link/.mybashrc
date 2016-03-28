@@ -19,8 +19,12 @@ export EDITOR='vim'
 
 export PATH="$PATH:~/.local/bin:~/.dotfiles/bin:~/.gem/ruby/2.2.0/bin:~/bin"
 export PATH="$PATH:~/.steam/steam/steamapps/common/oO"
+
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
+export LD_LIBRARY_PATH="/home/huot_b/.froot/lib/"
+export C_INCLUDE_PATH="/home/huot_b/.froot/include/"
+export CPLUS_INCLUDE_PATH="/home/huot_b/.froot/include/"
 
 export GOPATH="/home/${USER}/.go"
 
@@ -48,6 +52,7 @@ alias ..='cd ..'
 alias ne="vim"
 alias cc="cc -W -Wall -Wfatal-errors -g"
 alias extract="tar xzvf"
+alias md="mkdir"
 
 alias netre="sudo systemctl restart NetworkManager"
 
@@ -57,6 +62,7 @@ alias opensessionf='vim -c "OpenSession! $(basename $(pwd))"'
 alias vnctunnel='ssh -L 5900:localhost:5900 linux@gnidmoo.tk'
 
 alias viewcam='vlc v4l2:///dev/video0'
+alias viewserver="vinagre --vnc-scale --fullscreen 192.168.0.20:5900"
 
 # Remove Ctrl-S terminal handling
 stty -ixon

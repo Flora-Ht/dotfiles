@@ -19,7 +19,8 @@ URxvt*color0  : #2E3436
 URxvt*color8  : #555753
 ! red
 ! URxvt*color1  : #a31604
-URxvt*color1  : #67222A
+! URxvt*color1  : #67222A
+URxvt*color1  : #FF4C4C
 URxvt*color9  : #EF2929
 ! green
 URxvt*color2  : green3
