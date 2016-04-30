@@ -121,6 +121,8 @@ Plugin 'vim-utils/vim-man'
 Plugin 'dag/vim-fish'
 Plugin 'kana/vim-operator-user'
 Plugin 'haya14busa/vim-operator-flashy'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Plugin 'Valloric/YouCompleteMe' <= Won't work without a dot file
 " Plugin 'jeaye/color_coded'      <= Too slow to refresh + same thing as above
@@ -503,3 +505,11 @@ filetype plugin on
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
+
+"------------------------------------------------------------------------------
+" Powerline
+"------------------------------------------------------------------------------
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'wombat'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0

@@ -6,7 +6,7 @@ xconsole*geometry:              +0-0
 
 /* xterm */
 !xterm*font:                    9x15bold
-xterm*faceName:			Deja\ Vu\ Sans\ Mono:style=Regular:size=11
+xterm*faceName:			Deja\ Vu\ Sans\ Mono:style=Regular:size=10
 xterm*background:               black
 xterm*foreground:               white
 xterm*saveLines:                1000

@@ -38,6 +38,7 @@ exec redshift-gtk
 exec dropbox
 exec dunst
 exec pulseaudio --start
+exec firefox
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

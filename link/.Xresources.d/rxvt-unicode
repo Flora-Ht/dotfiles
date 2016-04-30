@@ -1,7 +1,7 @@
 /* URxvt */
 !URxvt*termName:		urxvt-256color
 !URxvt*font:			9x15bold
-URxvt*font:			xft:Deja\ Vu\ Sans\ Mono:size=11
+URxvt*font:			xft:Deja\ Vu\ Sans\ Mono\ for\ Powerline:size=10
 URxvt*geometry:			74*15
 URxvt*depth:			32
 URxvt*transparent:		true
