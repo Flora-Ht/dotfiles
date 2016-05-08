@@ -26,6 +26,7 @@ font pango:Deja Vu Sans Mono 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+exec pulseaudio --start
 exec setxkbmap -layout fr -variant oss
 exec xcompmgr
 exec volnoti
@@ -35,7 +36,6 @@ exec xinput set-button-map 13 1 1 3
 exec nm-applet
 exec volumeicon
 exec dunst
-exec pulseaudio --start
 exec firefox
 exec conky
 

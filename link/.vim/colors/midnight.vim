@@ -57,7 +57,7 @@ hi ErrorMsg	cterm=NONE ctermfg=7 ctermbg=1
 hi IncSearch	cterm=NONE ctermfg=yellow ctermbg=green
 hi Search	cterm=NONE ctermfg=grey ctermbg=blue
 hi MoreMsg	ctermfg=darkgreen
-hi ModeMsg	cterm=NONE ctermfg=brown
+hi ModeMsg	cterm=NONE ctermfg=blue
 hi LineNr term=underline ctermfg=Yellow guifg=Yellow
 hi Question	ctermfg=green
 hi StatusLine	cterm=NONE,reverse

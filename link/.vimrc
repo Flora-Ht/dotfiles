@@ -79,7 +79,7 @@ set laststatus=2        " Status line visible with only one buffer
 "------------------------------------------------------------------------------
 " Setup the default colorsheme
 "------------------------------------------------------------------------------
-colorscheme default
+colorscheme badwolf
 
 "------------------------------------------------------------------------------
 " Plugin configuration
@@ -201,7 +201,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_c_no_include_search = 1
 let g:syntastic_c_no_default_include_dirs = 1
 let g:syntastic_c_auto_refresh_includes = 1
-let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/bazin_q/.froot/include', '../libmy/include', '../include', '../common/include']
+let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/huot_b/.froot/include', '../libmy/include', '../include', '../common/include']
 let g:syntastic_c_compiler_options = '`find lib -name "include" -type d | sed "s/^/-I/"` `find ../lib -name "include" -type d | sed "s/^/-I/"`'
 "let g:syntastic_c_compiler_options = '-std=gnu11'
 

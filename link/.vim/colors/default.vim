@@ -65,7 +65,7 @@ hi ErrorMsg     cterm=bold ctermfg=7 ctermbg=1
 hi IncSearch    cterm=NONE ctermfg=white ctermbg=darkcyan
 hi Search       cterm=NONE ctermfg=white ctermbg=darkgrey
 hi MoreMsg      ctermfg=darkgreen
-hi ModeMsg      cterm=NONE ctermfg=brown
+hi ModeMsg      cterm=NONE ctermfg=blue
 hi LineNr       ctermfg=3
 hi Question     ctermfg=green
 hi StatusLine   cterm=bold,reverse

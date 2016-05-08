@@ -53,3 +53,27 @@ URxvt.keysym.Meta-Up:		\033[1;3A
 URxvt.keysym.Meta-Down:		\033[1;3B
 URxvt.keysym.Meta-Left:		\033[1;3D
 URxvt.keysym.Meta-Right:	\033[1;3C
+
+!
+! ! Sour candy. A voir - changer le violet.
+! *.color0:       #231d20
+! *.color8:       #1d171a
+! ! *.color1:       #c81c61
+! *.color1:       #C81C44
+! *.color9:       #db0057
+! *.color2:       #1ca6c8
+! *.color10:      #22c8f1
+! ! *.color3:       #1cc872
+! *.color3:       yellow
+! *.color11:      #21e884
+! ! *.color4:       #c8681c
+! *.color4:       #FF00FF
+! *.color12:      #4A5A8D
+! ! *.color5:       #c81ca3
+! *.color5:       #9DT3A4
+! *.color13:      #E961CB
+! ! *.color6:       #b1c81c
+! *.color6:       cyan3
+! *.color14:      #EBE421
+! *.color7:       #c7c8be
+! *.color15:      #ecede1
