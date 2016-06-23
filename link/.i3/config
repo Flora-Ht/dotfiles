@@ -26,18 +26,19 @@ font pango:Deja Vu Sans Mono 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-exec pulseaudio --start
+exec nitrogen --restore
 exec setxkbmap -layout fr -variant oss
 exec xcompmgr
 exec volnoti
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec update-background
 exec xinput set-button-map 13 1 1 3
 exec nm-applet
 exec volumeicon
 exec dunst
 exec firefox
 exec conky
+exec gnome-pie
+exec pulseaudio --start
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -45,6 +46,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec xterm
 bindsym $mod+Return exec urxvt
+bindsym $mod+T exec tilda
 
 # kill focused window
 bindsym $mod+Shift+A kill

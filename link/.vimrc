@@ -123,6 +123,8 @@ Plugin 'kana/vim-operator-user'
 Plugin 'haya14busa/vim-operator-flashy'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Valloric/YouCompleteMe'
 
 " Plugin 'Valloric/YouCompleteMe' <= Won't work without a dot file
 " Plugin 'jeaye/color_coded'      <= Too slow to refresh + same thing as above
@@ -201,7 +203,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_c_no_include_search = 1
 let g:syntastic_c_no_default_include_dirs = 1
 let g:syntastic_c_auto_refresh_includes = 1
-let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/huot_b/.froot/include', '../libmy/include', '../include', '../common/include']
+let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/huot_b/.froot/include', '../libmy/include', '../include', '../common/include', 'generateur/include']
 let g:syntastic_c_compiler_options = '`find lib -name "include" -type d | sed "s/^/-I/"` `find ../lib -name "include" -type d | sed "s/^/-I/"`'
 "let g:syntastic_c_compiler_options = '-std=gnu11'
 
@@ -513,3 +515,10 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'wombat'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
+
+"------------------------------------------------------------------------------
+" NerdTree
+"------------------------------------------------------------------------------
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_meaningful_tab_names=1
+let g:nerdtree_tabs_smart_startup_focus=1

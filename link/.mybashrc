@@ -36,7 +36,6 @@ source "${GITAWAREPROMPT}/main.sh"
 export LD_LIBRARY_PATH="/home/huot_b/.froot/lib/"
 export C_INCLUDE_PATH="/home/huot_b/.froot/include/"
 export CPLUS_INCLUDE_PATH="/home/huot_b/.froot/include/"
-
 export GOPATH="/home/${USER}/.go"
 
 source ~/.local/lib/colorsrc
@@ -44,8 +43,8 @@ source ~/.local/lib/colorsrc
 user="\[\033[38;5;196m\]Flora (\u)$EWHITE"
 date="$ECYAN\D{%d.%m.%Y}$EWHITE - $ECYAN\t$EWHITE"
 path="$EYELLOW\w$EWHITE $ECYAN\$git_branch$ERED\$git_dirty$EWHITE"
-star="\[\033[38;5;196m\]*$EWHITE"
-stars="\[\033[38;5;196;5m\]*\[$(tput sgr0)\]\[\033[38;5;15;5m\]*\[$(tput sgr0)\]\[\033[38;5;196;5m\]*\[$(tput sgr0)\]"
+star="\[\033[38;5;196m\]★$EWHITE"
+stars="\[\033[38;5;196;5m\]★\[$(tput sgr0)\]\[\033[38;5;15;5m\]★\[$(tput sgr0)\]\[\033[38;5;196;5m\]★\[$(tput sgr0)\]"
 export PS1="\n$star{ $user | $date | $path }$star\n$stars "
 
 # TO_CHANGE: Gogs username for bash
@@ -64,6 +63,13 @@ alias ne="vim"
 alias cc="cc -W -Wall -Wfatal-errors -g"
 alias extract="tar xzvf"
 alias md="mkdir"
+
+cd() {
+	builtin cd "$@"
+	local status=$?
+	[ $status -eq 0 ] && ls
+	return $status
+}
 
 alias netre="sudo systemctl restart NetworkManager"
 

@@ -1,2 +1,3 @@
 #!/bin/sh
-feh  --bg-scale '/home/huot_b/Images/Narr&Star22.png' 
+# feh  --bg-scale '/home/huot_b/Images/Narr&Star22.png' 
+feh --bg-scale '/home/huot_b/Pictures/Bordel/orca_share_media1460042450238.JPG'

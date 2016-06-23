@@ -1,8 +1,11 @@
 #!/bin/bash
 
-base_dir="/home/${USER}/rendus"
+base_dir="/home/${USER}/rendu"
 
-[ "$1" == "-nocheat" ] && notify-send -u normal -t 5000 "check-current-projects.sh" "Mode -nocheat enabled for goku."
+if [ "$1" == "-nocheat" ]
+then
+	notify-send -u normal -t 5000 "check-current-projects.sh" "Mode -nocheat enabled for goku."
+fi
 
 for project in $(cat "$base_dir/current")
 do
@@ -16,7 +19,7 @@ do
 	
 	cd "$project"
 	
-	norm_errors=$(python2 /home/${USER}/.local/bin/gistfile1.py $1 $(find . -name '*.c' -or -name '*.h' -or -name 'Makefile' | grep -v "tests-") | tail -1 | awk '{print $2*-1}');
+	norm_errors=$(bash /home/${USER}/.local/bin/goku $1 | tail -1 | awk '{print $1*-1}');
 	if [ $norm_errors -gt 0 ]
 	then
 		notify-send -u critical -t 10000 "$(basename $(pwd))" "You have $norm_errors norm errors."

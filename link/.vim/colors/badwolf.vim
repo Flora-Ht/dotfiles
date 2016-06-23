@@ -259,11 +259,11 @@ call s:HL('String', 'saltwatertaffy')
 
 " Control flow stuff is taffy.
 call s:HL('Statement',   'dress', '', 'bold')
-call s:HL('Keyword',     'taffy', '', 'bold')
+call s:HL('Keyword',     'dress', '', 'bold')
 call s:HL('Conditional', 'tardis', '', 'bold')
 call s:HL('Operator',    'orange', '', 'none')
-call s:HL('Label',       'taffy', '', 'none')
-call s:HL('Repeat',      'tardis', '', 'none')
+call s:HL('Label',       'dress', '', 'none')
+call s:HL('Repeat',      'tardis', '', 'bold')
 
 " Functions and variable declarations are orange, because plain looks weird.
 call s:HL('Identifier', 'orange', '', 'none')
@@ -293,7 +293,7 @@ call s:HL('Float',  'orange', '', 'bold')
 call s:HL('SpecialChar', 'dress', '', 'bold')
 
 call s:HL('Type', 'dress', '', 'none')
-call s:HL('StorageClass', 'taffy', '', 'none')
+call s:HL('StorageClass', 'dress', '', 'none')
 call s:HL('Structure', 'tardis', '', 'none')
 call s:HL('Typedef', 'tardis', '', 'bold')
 
