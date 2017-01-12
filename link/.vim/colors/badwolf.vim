@@ -266,8 +266,8 @@ call s:HL('Label',       'dress', '', 'none')
 call s:HL('Repeat',      'tardis', '', 'bold')
 
 " Functions and variable declarations are orange, because plain looks weird.
-call s:HL('Identifier', 'orange', '', 'none')
-call s:HL('Function',   'orange', '', 'none')
+call s:HL('Identifier', 'lime', '', 'none')
+call s:HL('Function',   'lime', '', 'none')
 
 " Preprocessor stuff is lime, to make it pop.
 "

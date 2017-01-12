@@ -60,7 +60,8 @@ alias eman="man -Hfirefox"
 
 alias ..='cd ..'
 alias ne="vim"
-alias cc="cc -W -Wall -Wfatal-errors -g"
+alias cc="cc -W -Wall -Wfatal-errors -g -Werror -Wextra"
+alias cpp="g++ -Wall -Werror -Wextra -std=c++03 *.cpp"
 alias extract="tar xzvf"
 alias md="mkdir"
 
@@ -71,7 +72,10 @@ cd() {
 	return $status
 }
 
+alias tests="cd ~/Documents/Piscine\ C++/PISCINE_ronflex/Tests\ with\ results/"
+
 alias netre="sudo systemctl restart NetworkManager"
+alias ping="ping 8.8.8.8"
 
 alias opensession='vim -c "OpenSession $(basename $(pwd))"'
 alias opensessionf='vim -c "OpenSession! $(basename $(pwd))"'

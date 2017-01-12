@@ -124,7 +124,7 @@ Plugin 'haya14busa/vim-operator-flashy'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " Plugin 'jeaye/color_coded'      <= Too slow to refresh + same thing as above
 " Plugin 'rdnetto/YCM-Generator'  <= Used for these plugins
