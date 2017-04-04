@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export EPIMAIL="flora.huot@epitech.eu"
+
 if [ -f /usr/share/doc/pkgfile/command-not-found.bash ]
 then
 	. /usr/share/doc/pkgfile/command-not-found.bash
@@ -61,7 +63,7 @@ alias eman="man -Hfirefox"
 alias ..='cd ..'
 alias ne="vim"
 alias cc="cc -W -Wall -Wfatal-errors -g -Werror -Wextra"
-alias cpp="g++ -Wall -Werror -Wextra -std=c++03 *.cpp"
+alias cpp="g++ -g -Wall -Werror -Wextra -std=c++03 *.cpp"
 alias extract="tar xzvf"
 alias md="mkdir"
 
@@ -72,18 +74,14 @@ cd() {
 	return $status
 }
 
-alias tests="cd ~/Documents/Piscine\ C++/PISCINE_ronflex/Tests\ with\ results/"
-
 alias netre="sudo systemctl restart NetworkManager"
 alias ping="ping 8.8.8.8"
 
 alias opensession='vim -c "OpenSession $(basename $(pwd))"'
 alias opensessionf='vim -c "OpenSession! $(basename $(pwd))"'
 
-alias vnctunnel='ssh -L 5900:localhost:5900 linux@gnidmoo.tk'
-
 alias viewcam='vlc v4l2:///dev/video0'
-alias viewserver="vinagre --vnc-scale --fullscreen 192.168.0.20:5900"
+alias blinux="sudo docker run --rm -tiv $PWD:/current antoinebaudrand/blinux bash"
 
 # Remove Ctrl-S terminal handling
 stty -ixon

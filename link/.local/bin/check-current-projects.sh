@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_dir="/home/${USER}/rendu"
+base_dir="/home/${USER}/rendus"
 
 if [ "$1" == "-nocheat" ]
 then

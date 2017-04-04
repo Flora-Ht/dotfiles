@@ -80,9 +80,14 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == cpp.class-using-new-definition ==
 class |?CLASSNAME| {
+	private:
+	
+	protected:
+	
 	public:
 		|CLASSNAME|();
-		|CLASSNAME|(const |CLASSNAME| &other);
+		|CLASSNAME|(|CLASSNAME| const &);
+		|CLASSNAME| &operator=(|CLASSNAME| const &);
 		~|CLASSNAME|();
 };
 
@@ -93,6 +98,9 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
 
 |CLASSNAME|::|CLASSNAME|(const |CLASSNAME| &other) {
+}
+
+|CLASSNAME| &operator=(|CLASSNAME| const &) {
 }
 
 |CLASSNAME|::~|CLASSNAME|() {
@@ -193,37 +201,20 @@ template < class T >
 
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == cpp.template-class-using-new-definition ==
-/* 
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
- */
-
 template < class T >
-class |CLASSNAME|
-{
-  public:
-    // ====================  LIFECYCLE     =======================================
-    |CLASSNAME| ();                           /* constructor      */
-    |CLASSNAME| ( const |CLASSNAME| &other ); /* copy constructor */
-    ~|CLASSNAME| ();                          /* destructor       */
-
-		/* ====================  ACCESSORS     ======================================= */
-
-		/* ====================  MUTATORS      ======================================= */
-
-		/* ====================  OPERATORS     ======================================= */
-
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator
-
-  protected:
-    /* ====================  DATA MEMBERS  ======================================= */
-
+class |CLASSNAME| {
+  
   private:
-    /* ====================  DATA MEMBERS  ======================================= */
+  
+  protected:
+  
+  public:
+	|CLASSNAME|();
+    |CLASSNAME|(|CLASSNAME| const &);
+    |CLASSNAME| &operator=(|CLASSNAME| const &);
+    ~|CLASSNAME|();
 
-}; /* -----  end of template class |CLASSNAME|  ----- */
+};
 
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == cpp.template-class-using-new-implementation ==

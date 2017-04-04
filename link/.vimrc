@@ -124,8 +124,8 @@ Plugin 'haya14busa/vim-operator-flashy'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jistr/vim-nerdtree-tabs'
-" Plugin 'Valloric/YouCompleteMe'
 
+" Plugin 'Valloric/YouCompleteMe'
 " Plugin 'jeaye/color_coded'      <= Too slow to refresh + same thing as above
 " Plugin 'rdnetto/YCM-Generator'  <= Used for these plugins
 
@@ -202,7 +202,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_c_no_include_search = 1
 let g:syntastic_c_no_default_include_dirs = 1
 let g:syntastic_c_auto_refresh_includes = 1
-let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/huot_b/.froot/include', '../libmy/include', '../include', '../common/include', 'generateur/include']
+let g:syntastic_c_include_dirs = ['.', 'include', 'external', '/home/huot_b/.froot/include', '../libmy/include', '../include']
 let g:syntastic_c_compiler_options = '`find lib -name "include" -type d | sed "s/^/-I/"` `find ../lib -name "include" -type d | sed "s/^/-I/"`'
 "let g:syntastic_c_compiler_options = '-std=gnu11'
 
@@ -213,8 +213,8 @@ let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_no_include_search = 1
 let g:syntastic_cpp_no_default_include_dirs = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
-let g:syntastic_cpp_include_dirs = ['.', 'include', 'external', 'external/include', '/usr/include/qt']
-let g:syntastic_cpp_compiler_options = '-std=c++11 -fPIE `find include/* -type d | sed "s/^/-I/"` `find external/*/{include,external} -type d | sed "s/^/-I/"`'
+let g:syntastic_cpp_include_dirs = ['.', 'include', 'external', 'external/include', '../include', 'bin/include', 'common']
+let g:syntastic_cpp_compiler_options = '-std=c++11 -fPIE -fPIC `find include/* -type d | sed "s/^/-I/"` `find external/*/{include,external} -type d | sed "s/^/-I/"`'
 "`find /usr/include/qt/* -type d | sed "s/^/-I/"`'
 
 "------------------------------------------------------------------------------
@@ -290,7 +290,7 @@ map! <ESC>[17;5~ <C-F6>
 "------------------------------------------------------------------------------
 " Custom bindings
 "------------------------------------------------------------------------------
-" To open NERDTree, ctrl-x
+" To open NERDTree, ctrl-B
 "------------------------------------------------------------------------------
 nmap <C-B> :NERDTree<CR>
 
@@ -521,3 +521,9 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_meaningful_tab_names=1
 let g:nerdtree_tabs_smart_startup_focus=1
+
+
+"------------------------------------------------------------------------------
+" C-support
+"------------------------------------------------------------------------------
+" let g:C_Styles = { '.c,.h' : 'C', '.cc,.cpp,.c++,.C,.hh,.h++,*.H' : 'CPP' }
